@@ -23,6 +23,7 @@ bool MapCreator::placePlanet(int x, int y) {
     return true;
 }
 
+/*
 bool MapCreator::removePlanet(int x, int y) {
     for (auto it = planets.begin(); it != planets.end(); ++it) {
         if (*it == std::pair<int,int>{x,y}) {
@@ -32,7 +33,7 @@ bool MapCreator::removePlanet(int x, int y) {
         }
     }
     return false;
-}
+}*/
 
 bool MapCreator::setDestination(int x, int y) {
     if (!inBounds(x, y) || isWall(x, y)) return false;
@@ -41,10 +42,11 @@ bool MapCreator::setDestination(int x, int y) {
     return true;
 }
 
+/*
 void MapCreator::clearDestination() {
     dest = {-1,-1};
     updateMapRepresentation();
-}
+}*/
 
 bool MapCreator::setPlayer(int x, int y) {
     if (!inBounds(x, y) || isWall(x, y)) return false;
@@ -60,13 +62,14 @@ bool MapCreator::movePlayerTo(int x, int y) {
     return true;
 }
 
+/*
 bool MapCreator::setObject(int x, int y, char objChar) {
     if (!inBounds(x, y) || isWall(x, y)) return false;
     if (objChar == '@' || objChar == 'O' || objChar == '*') return false;
     map[y][x] = objChar;
     updateMapRepresentation();
     return true;
-}
+}*/
 
 char MapCreator::getTile(int x, int y) const {
     if (!inBounds(x,y)) {

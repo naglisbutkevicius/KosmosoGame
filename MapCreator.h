@@ -10,15 +10,15 @@ public:
     MapCreator(int w, int h, char wall = '#', char floor = '.');
 
     bool placePlanet(int x, int y);
-    bool removePlanet(int x, int y);
+    //bool removePlanet(int x, int y);
 
     bool setDestination(int x, int y);
-    void clearDestination();
+    //void clearDestination();
 
     bool setPlayer(int x, int y);
     bool movePlayerTo(int x, int y);
 
-    bool setObject(int x, int y, char objChar);
+    //bool setObject(int x, int y, char objChar);
 
     char getTile(int x, int y) const;
 
