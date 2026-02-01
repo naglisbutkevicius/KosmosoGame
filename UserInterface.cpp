@@ -120,15 +120,6 @@ void UserInterface::handleMove() {
         if (!res.message.empty()) std::cout << res.message << "\n";
     }
 
-    /*
-    if (res.win) {
-        std::cout << "\nYou reached the destination. You win!\n";
-    } else if (res.dead) {
-        std::cout << "\nGame Over! You died.\n";
-    } else if (res.outOfFuel) {
-        std::cout << "\nGame Over! You ran out of fuel.\n";
-    }*/
-
     waitForEnter();
 }
 

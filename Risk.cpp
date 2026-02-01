@@ -21,3 +21,7 @@ RiskResult Risk::roll(Player& player) const {
     auto encounter = factory.create(encounterId);
     return encounter->resolve(player);
 }
+
+int Risk::getLevel() const {
+    return riskLevel;
+}

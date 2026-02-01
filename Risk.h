@@ -10,7 +10,7 @@ public:
 
     RiskResult roll(Player& player) const;
 
-    int getLevel() const { return riskLevel; }
+    int getLevel() const;
 
 private:
     int riskLevel;
